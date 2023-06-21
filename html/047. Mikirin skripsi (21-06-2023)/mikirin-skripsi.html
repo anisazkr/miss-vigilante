@@ -179,45 +179,143 @@
         </p>
         <p>
             1. Tokenisasi:
+            Tujuan: Memisahkan teks menjadi unit-unit yang lebih kecil, 
+            seperti kata-kata atau frasa.
             Algoritma: Algoritma Tokenisasi Berbasis Aturan, Tokenisasi 
             Berbasis Mesin, Tokenisasi Berbasis Statistik.
             Library Python: NLTK (Natural Language Toolkit), SpaCy.
+
+            Contoh Penerapan: Menggunakan library NLTK atau SpaCy untuk 
+            tokenisasi teks dalam bahasa Inggris. Misalnya, memisahkan 
+            kalimat menjadi kata-kata terpisah.
         </p>
         <p>
             2. Stemming dan Lematisasi:
+            Tujuan: Mengubah kata-kata menjadi bentuk dasarnya (lematisasi) 
+            atau menghapus akhiran dan awalan untuk mendapatkan bentuk dasar 
+            (stemming).
             Algoritma: Algoritma Porter, Algoritma Snowball.
             Library Python: NLTK, SpaCy.
+
+            Contoh Penerapan: Menggunakan algoritma Porter atau Snowball dari 
+            library NLTK atau SpaCy untuk melakukan stemming atau lemmatisasi 
+            pada kata-kata dalam teks.
         </p>
         <p>
             3. Pemodelan Bahasa:
+            Tujuan: Membangun model yang dapat memahami dan menghasilkan teks 
+            secara kontekstual.
             Algoritma: Model N-gram, Model Markov Tersembunyi 
             (Hidden Markov Model/HMM), Model Berbasis Transformasi (Transformer).
             Library Python: NLTK, Gensim, Hugging Face Transformers.
+
+            Contoh Penerapan: Menggunakan model N-gram, Model Markov Tersembunyi 
+            (HMM), atau Model Berbasis Transformasi (seperti BERT atau GPT) dari 
+            library NLTK, Gensim, atau Hugging Face Transformers untuk memodelkan 
+            teks atau menjalankan tugas pemrosesan bahasa alami.
+            <!-- HMM aku pernah denger, tapi lupa dimana wkwkwk. Dimana 
+            ya? Lupaa euy. -->
         </p>
         <p>
             4. Klasifikasi Teks:
+            Tujuan: Mengklasifikasikan teks ke dalam kategori atau label yang 
+            telah ditentukan.
             Algoritma: Naive Bayes, Support Vector Machine (SVM), 
             Random Forest, Jaringan Saraf.
             Library Python: Scikit-learn, NLTK, TensorFlow, PyTorch.
+
+            Contoh Penerapan: Menggunakan algoritma Naive Bayes, Support Vector 
+            Machine (SVM), atau jaringan saraf seperti TensorFlow atau PyTorch 
+            dari library Scikit-learn, NLTK, TensorFlow, atau PyTorch untuk 
+            melakukan klasifikasi teks, seperti klasifikasi sentimen pada 
+            ulasan produk.
         </p>
         <p>
             5. Analisis Sentimen:
+            Tujuan: Menganalisis sentimen atau sentimen emosional dari teks.
             Algoritma: Naive Bayes, Support Vector Machine, Jaringan 
             Saraf Rekurens (Recurrent Neural Network/RNN), Jaringan 
             Saraf Transformers.
             Library Python: NLTK, TextBlob, VaderSentiment, Hugging 
             Face Transformers.
+
+            Contoh Penerapan: Menggunakan algoritma Naive Bayes, Support 
+            Vector Machine, jaringan saraf rekurens (RNN), atau jaringan 
+            saraf Transformers dari library NLTK, TextBlob, VaderSentiment, 
+            atau Hugging Face Transformers untuk melakukan analisis sentimen 
+            pada teks, misalnya untuk mengetahui apakah suatu ulasan bersifat 
+            positif atau negatif.
+            <!-- Atau aku buat aja analisis sentimen ini ya. 
+            "Analisis sentimen twitter untuk chat GPT dan teknologi 
+            kecerdasan buatan", wkwkwk. Kan kalosentimen analisis 
+            banyak banget contohnya, di perpus juga banyak -->
         </p>
         <p>
             6. Pengenalan Entitas Nama (Named Entity Recognition/NER):
+            Tujuan: Mengidentifikasi dan mengekstraksi entitas penting seperti 
+            nama orang, tempat, organisasi, atau tanggal dari teks.
             Algoritma: Conditional Random Fields (CRF), Bidirectional LSTM-CRF.
             Library Python: NLTK, SpaCy, AllenNLP.
+
+            Contoh Penerapan: Menggunakan algoritma Conditional Random Fields 
+            (CRF), Bidirectional LSTM-CRF, atau library seperti NLTK, SpaCy, 
+            atau AllenNLP untuk mengenali entitas penting dalam teks, misalnya 
+            untuk mengekstraksi nama orang dari berita.
+
+            <!-- Ini lucu juga ni. Buat cari buronan wkwkwk. Ntar kita 
+            buat ekstraksi untuk ngenalin nama si buronan. Atau kalo 
+            ada kasus kayak Sambo kemaren, ehh iya juga sambo woi
+            wkwkwk "Eksplorasi kasus kejahatan yang pernah melibatkan 
+            Sambo menggunakan algoritma ..." hahhahaha, ngacok-->
         </p>
         <p>
             7. Penerjemahan Mesin:
+            Tujuan: Menerjemahkan teks dari satu bahasa ke bahasa lain 
+            secara otomatis.
             Algoritma: Model Berbasis Transformasi (Transformer), 
             Encoder-Decoder LSTM.
             Library Python: Hugging Face Transformers, OpenNMT, Fairseq.
+
+            Contoh Penerapan: Menggunakan model Berbasis Transformasi 
+            (Transformer), Encoder-Decoder LSTM, atau library seperti 
+            Hugging Face Transformers, OpenNMT, atau Fairseq untuk 
+            melakukan penerjemahan mesin, seperti menerjemahkan teks 
+            dari bahasa Inggris ke bahasa Prancis.
+        </p>
+        <p>
+            8. Pemrosesan Bahasa Alami Berbasis Pertanyaan 
+            (Question Answering):
+            Tujuan: Memahami pertanyaan dalam bahasa alami dan 
+            menghasilkan jawaban yang sesuai berdasarkan konteks.
+            Algoritma:
+                BERT (Bidirectional Encoder Representations from Transformers)
+                ALBERT (A Lite BERT)
+                RoBERTa (Robustly Optimized BERT Pretraining Approach)
+                ELECTRA (Efficiently Learning an Encoder that Classifies Token Replacements Accurately)
+                LSTM (Long Short-Term Memory)
+                GPT (Generative Pre-trained Transformer)
+                XLNet (eXtreme Learning Net)
+                T5 (Text-to-Text Transfer Transformer)
+                DistilBERT (Distilled BERT)
+                SpanBERT (Span-based BERT)
+                Library Python:
+            Library python:
+                Hugging Face Transformers
+                OpenNMT
+                Fairseq
+
+            Contoh Penerapan: Menggunakan model berbasis Transformer 
+            seperti BERT (Bidirectional Encoder Representations from 
+            Transformers) atau ALBERT (A Lite BERT) dari library Hugging 
+            Face Transformers untuk membangun sistem pemrosesan bahasa 
+            alami berbasis pertanyaan. Model ini dapat dilatih menggunakan 
+            dataset tanya-jawab dan digunakan untuk menjawab pertanyaan 
+            berdasarkan pemahaman konteks dan pengetahuan yang telah 
+            dipelajari. Misalnya, menjawab pertanyaan seperti "Siapa penemu 
+            teori relativitas?" dengan jawaban "Albert Einstein".
+
+            <!-- Ini ni yang mau aku pake buat kitab ianah wkwkwk. 
+            Bisa ngga ya. -->
         </p>
         <p>
             Cara buat modelnya gimanaaa? Allahu akbar, Allahu akbar 
